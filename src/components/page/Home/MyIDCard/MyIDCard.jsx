@@ -1,7 +1,7 @@
 import "atropos/css";
 import Atropos from "atropos/react";
 import carlosDaniel from "../../../../assets/carlosdaniel.jpeg";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoGithub, IoLogoLinkedin, IoDocumentOutline } from "react-icons/io5";
 
 function MyIDCard() {
   return (
@@ -32,11 +32,14 @@ function MyIDCard() {
                       className="flex gap-2 ml-2 sm:ml-0 sm:mt-2 text-xl text-gray-300"
                       data-atropos-offset="2"
                     >
-                      <a href="" className="hover:text-pink-600">
+                      <a href="https://github.com/charls96" target="_blank" className="hover:text-pink-600">
                         <IoLogoGithub />
                       </a>
-                      <a href="" className="hover:text-pink-600">
+                      <a href="https://www.linkedin.com/in/carlos-daniel-lopez-perez/" target="_blank" className="hover:text-pink-600">
                         <IoLogoLinkedin />
+                      </a>
+                      <a href="/resume.pdf" target="_blank" className="hover:text-pink-600">
+                        <IoDocumentOutline />
                       </a>
                     </div>
                   </div>

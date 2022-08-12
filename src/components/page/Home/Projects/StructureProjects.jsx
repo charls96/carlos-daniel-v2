@@ -32,7 +32,7 @@ const StructureProjects = (projectType) => {
         </div>
       )}
 
-      <div className="flex flex-col gap-48">
+      <div className="flex flex-col gap-60 sm:gap-48">
         {ProjectsData.map(
           (project) =>
             project.type === projectType.projectType && (
