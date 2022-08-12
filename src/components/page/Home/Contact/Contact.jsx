@@ -1,18 +1,20 @@
-import confetti from 'canvas-confetti'
-import {useCallback} from "react";
+import confetti from "canvas-confetti";
+import { useCallback } from "react";
 
 const Contact = () => {
   const onClickConfetti = useCallback(() => {
     confetti({
       particleCount: 150,
       spread: 60,
-      origin: { x: 0.5, y: 0.68 }
+      origin: { x: 0.5, y: 0.68 },
     });
-    setTimeout( function() { window.location = "mailto:charly.lopez.perez@gmail.com" }, 1000 );
+    setTimeout(function () {
+      window.location = "mailto:charly.lopez.perez@gmail.com";
+    }, 1000);
   }, []);
 
   return (
-    <div className="mt-80 lg:mt-44">
+    <div id="contact" className="mt-80 lg:mt-44">
       <div className="m-auto w-fit whitespace-nowrap relative z-10">
         <h2 className=" text-5xl sm:text-7xl lg:text-8xl text-pink-500 font-extrabold after:absolute after:left-[3px] after:top-[1px] after:content-['Let\'s_talk'] after:text-pink-700 after:-z-10">
           Let's talk
@@ -32,8 +34,8 @@ const Contact = () => {
                 ry="13.8205"
                 fill="#FCEA2B"
                 stroke="#FCEA2B"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
               <path
                 fill="#FCEA2B"
@@ -46,8 +48,8 @@ const Contact = () => {
                 r="13.8"
                 fill="#FCEA2B"
                 stroke="#FCEA2B"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
               <path
                 fill="#FCEA2B"
@@ -65,18 +67,18 @@ const Contact = () => {
               <path
                 fill="none"
                 stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="2"
                 d="M11.8636,37.383C10.748,40.3324,7.874,44.084,5,46c6,0,10.2441-1.752,13.3981-6.0904"
               />
               <path
                 fill="none"
                 stroke="#000000"
-                stroke-linecap="round"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeMiterlimit="10"
+                strokeWidth="2"
                 d="M22.2749,39.8161 C28.9249,38.7295,34,32.9574,34,26c0-7.732-6.268-14-14-14S6,18.268,6,26c0,3.3337,1.1652,6.3952,3.1105,8.7995"
               />
               <circle cx="59" cy="41.28" r="2" fill="#000000" stroke="none" />
@@ -85,18 +87,18 @@ const Contact = () => {
               <path
                 fill="none"
                 stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="2"
                 d="M60.1364,52.663C61.252,55.6124,64.126,59.364,67,61.28c-6,0-10.2441-1.752-13.3981-6.0904"
               />
               <path
                 fill="none"
                 stroke="#000000"
-                stroke-linecap="round"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeMiterlimit="10"
+                strokeWidth="2"
                 d="M49.7251,55.0961 C43.0751,54.0095,38,48.2374,38,41.28c0-7.732,6.268-14,14-14s14,6.268,14,14c0,3.3337-1.1652,6.3952-3.1105,8.7995"
               />
             </g>
@@ -105,13 +107,12 @@ const Contact = () => {
         <div className="flex justify-center mt-20 relative">
           <button
             onClick={onClickConfetti}
-            href=""
             className="text-pink-300 relative active:scale-110 transition duration-200"
           >
             <div className="px-4 py-2 text-2xl bg-sky-500 border-4 border-sky-700 rounded transition ease-in-out delay-150 hover:translate-y-[10px] hover:translate-x-[10px] relative z-20">
-              <p className="font-extrabold after:absolute after:left-[18px] after:top-[10px] after:content-['SAY_HI'] after:text-pink-500 after:-z-10 flex gap-3">
+              <div className="font-extrabold after:absolute after:left-[18px] after:top-[10px] after:content-['SAY_HI'] after:text-pink-500 after:-z-10 flex gap-3">
                 SAY HI <div className="text-3xl wave">👋🏼</div>
-              </p>
+              </div>
             </div>
             <p className="w-full h-full bg-black -z-30 bg-opacity-60 rounded absolute -right-[10px] top-[10px]"></p>
           </button>

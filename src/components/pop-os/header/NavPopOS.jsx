@@ -9,6 +9,7 @@ import {
 } from "react-icons/io5";
 import MobileNavPopOS from "./MobileNavPopOS";
 import { Link, NavLink } from "react-router-dom";
+import ComingSoon from "../../ComingSoon";
 
 const NavPopOS = () => {
   const [openMobileNav, setOpenMobileNav] = useState(false);
@@ -31,36 +32,42 @@ const NavPopOS = () => {
 
   return (
       <div className="ml-4 flex gap-6 text-gray-400 text-lg">
-        <NavLink to="/" className={({isActive}) => (isActive ? 'border-b-2 border-gray-200 text-gray-200' : 'border-b-2 border-transparent') + ' flex items-center'}>
+        {/* <NavLink to="/" className={({isActive}) => (isActive ? 'border-b-2 border-gray-200 text-gray-200' : 'border-b-2 border-transparent') + ' flex items-center'}>
           <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
             <IoEarthOutline /> Home
           </span>
-        </NavLink>
-        <Link to="#experience" className="hidden sm:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
+        </NavLink> */}
+        <a href="/" className={`active:border-b-2 active:border-gray-200 active:text-gray-200 border-b-2 border-transparent flex items-center`}>
+          <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
+            <IoEarthOutline /> Home
+          </span>
+        </a>
+        {/* <a href="#experience" className="hidden sm:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
           <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
             <IoConstructOutline /> Experience
           </span>
-        </Link>
-        <NavLink to="#projects" className="hidden md:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
+        </a> */}
+        <a href="#projects" className="hidden md:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
           <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
             <IoCode /> Projects
           </span>
-        </NavLink>
-        <button className="hidden md:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
+        </a>
+        <a href="#contact" className="hidden md:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
           <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
             <IoChatbubblesOutline /> Contact
           </span>
-        </button>
-        <button className="hidden lg:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
+        </a>
+        <a href="/resume.pdf" target="_blank" className="hidden lg:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
           <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
             <IoNewspaperOutline /> Resume
           </span>
-        </button>
-        <NavLink to="/my-anime" className={({isActive}) => (isActive ? 'border-b-2 border-gray-200 text-gray-200' : ' border-b-2 border-transparent') + ' hidden lg:flex items-center'}>
-          <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
+        </a>
+        <a href="/"  className={`active:border-b-2 active:border-gray-200 active:text-gray-200 border-b-2 border-transparent hidden lg:flex items-center`}>
+          <span className="relative flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out z-10">
             🍥 My anime
+            <ComingSoon right={"right-[5px]"} top={"top-[30px]"} text="text-xs" />
           </span>
-        </NavLink>
+        </a>
         <div ref={buttonMobileNavRef}
           onClick={() => setOpenMobileNav(!openMobileNav)}
           className="relative lg:hidden flex items-center cursor-pointer"
