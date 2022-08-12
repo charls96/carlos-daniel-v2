@@ -5,6 +5,7 @@ import TimeLine from "./TimeLine/TimeLine";
 import MotivationalPhrase from "./MotivationalPhrase";
 import HeadingText from "./HeadingText";
 import Decoration from "./Decoration";
+import Contact from "./Contact/Contact";
 
 const Home = () => {
   return (
@@ -25,9 +26,9 @@ const Home = () => {
         <MotivationalPhrase />
       </div>
       <div className="mx-4 sm:mx-6 relative z-10">
-        <div className="lg:hidden cursor-default w-full -z-20 transition-all ease-in-out delay-150 duration-300 hover:-translate-y-10">
+        <div className="lg:hidden cursor-default -z-20 transition-all ease-in-out delay-150 duration-300 hover:-translate-y-10 w-full mb-2">
           <div
-            className={`ml-[4px] sm:ml-[34px] text-5xl sm:text-8xl text-sky-500 font-extrabold relative z-10`}
+            className={`ml-[4px] sm:ml-[34px] text-5xl sm:text-7xl md:text-8xl text-sky-500 font-extrabold relative z-10`}
           >
             <p
               className={`after:absolute after:left-[3px] after:top-[1px] after:content-['ABOUT_ME'] after:text-sky-700 after:-z-10`}
@@ -37,21 +38,26 @@ const Home = () => {
           </div>
         </div>
         <MyIDCard />
-        <div className="hidden lg:block cursor-default absolute -right-[370px] -bottom-[180px] w-full -z-20 transition-all ease-in-out delay-150 duration-300 hover:-translate-x-10 rotate-90">
-          <div className={`text-8xl text-sky-500 font-extrabold relative z-10`}>
-            <p
-              className={`after:absolute after:left-[3px] after:top-[1px] after:content-['ABOUT_ME'] after:text-sky-700 after:-z-10`}
+          <div className="w-fit whitespace-nowrap hidden lg:block cursor-default absolute left-[58%] bottom-[200px] -z-20 transition-all ease-in-out delay-150 duration-300 hover:-translate-x-10 rotate-90">
+            <div
+              className={`text-8xl text-sky-500 font-extrabold relative z-10`}
             >
-              ABOUT ME
-            </p>
+              <p
+                className={`after:absolute after:left-[3px] after:top-[1px] after:content-['ABOUT_ME'] after:text-sky-700 after:-z-10`}
+              >
+                ABOUT ME
+              </p>
+            </div>
           </div>
-        </div>
       </div>
       {/* <div className="my-32">
         <TimeLine />
       </div> */}
       <div className="lg:my-32">
         <Projects />
+      </div>
+      <div className="">
+        <Contact />
       </div>
       {/*       <p className="text-6xl">effecto cambiar texto del dni para poner cosas sobre mi</p>
       <p className="text-6xl">I know you want to know more from me but wait for the cream (referencia a malditos bastardos)</p>
