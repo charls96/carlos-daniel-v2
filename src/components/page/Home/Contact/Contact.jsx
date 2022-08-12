@@ -8,6 +8,7 @@ const Contact = () => {
       spread: 60,
       origin: { x: 0.5, y: 0.68 }
     });
+    setTimeout( function() { window.location = "mailto:charly.lopez.perez@gmail.com" }, 1000 );
   }, []);
 
   return (
@@ -102,9 +103,9 @@ const Contact = () => {
           </svg>
         </div>
         <div className="flex justify-center mt-20 relative">
-          <a
+          <button
             onClick={onClickConfetti}
-            href="#"
+            href=""
             className="text-pink-300 relative active:scale-110 transition duration-200"
           >
             <div className="px-4 py-2 text-2xl bg-sky-500 border-4 border-sky-700 rounded transition ease-in-out delay-150 hover:translate-y-[10px] hover:translate-x-[10px] relative z-20">
@@ -113,7 +114,7 @@ const Contact = () => {
               </p>
             </div>
             <p className="w-full h-full bg-black -z-30 bg-opacity-60 rounded absolute -right-[10px] top-[10px]"></p>
-          </a>
+          </button>
         </div>
       </div>
     </div>
