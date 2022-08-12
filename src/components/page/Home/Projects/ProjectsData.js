@@ -10,7 +10,7 @@ const ProjectsData = [
     web:
       "https://autocarsservicemur-h3xvv4itr-autocarservicemur-protonmailc.vercel.app/",
     github: "",
-    image: require('../../../../assets/projects/autocarservicemur/autocarservicemur.webp').default,
+    image: new URL('../../../../assets/projects/autocarservicemur/autocarservicemur.webp', import.meta.url),
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const ProjectsData = [
     web: "",
     github: "https://github.com/charls96/vanilla-whatsapp",
     npm: "https://www.npmjs.com/package/vanilla-whatsapp",
-    image: require('../../../../assets/projects/plugin-whatsapp/plugin-whatsapp.webp').default,
+    image: new URL('../../../../assets/projects/plugin-whatsapp/plugin-whatsapp.webp', import.meta.url),
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const ProjectsData = [
       "A Job Exchange for my highschool as My Final Grade Project built with 6 classmates. Teachers need to validate students and enterprises, validate students subscriptions to offers and enterprises offers. Only a super-admin can validate teachers.",
     web: "",
     github: "",
-    image: require('../../../../assets/projects/jobs-exchange/jobs-exchange.webp').default,
+    image: new URL('../../../../assets/projects/jobs-exchange/jobs-exchange.webp', import.meta.url),
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const ProjectsData = [
       "An e-commerce for selling clothes, with paypal pay implementation and user area to see your orders and the their status.",
     web: "",
     github: "https://github.com/charls96/laravel-ecommerce",
-    image: require('../../../../assets/projects/laravel-ecommerce/laravel-ecommerce.webp').default,
+    image: new URL('../../../../assets/projects/laravel-ecommerce/laravel-ecommerce.webp', import.meta.url),
   },
 ];
 
