@@ -106,7 +106,7 @@ const FooterPopOs = () => {
         >
           <span className="transition ease-in-out delay-150 hover:-translate-y-[15%] duration-200 hover:scale-100 absolute bottom-[-0.5rem] sm:left-[20rem] scale-75 sm:text-[2.9rem]">
             🍥
-            <ComingSoon right={"-right-[50px]"} top={"top-[5px]"} />
+            {/* <ComingSoon right={"-right-[50px]"} top={"top-[5px]"} /> */}
           </span>
         </a>
       </div>

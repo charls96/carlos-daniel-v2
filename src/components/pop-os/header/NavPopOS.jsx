@@ -47,12 +47,12 @@ const NavPopOS = () => {
             <IoConstructOutline /> Experience
           </span>
         </a> */}
-        <a href="#projects" className="hidden md:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
+        <a href="/#projects" className="hidden md:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
           <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
             <IoCode /> Projects
           </span>
         </a>
-        <a href="#contact" className="hidden md:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
+        <a href="/#contact" className="hidden md:flex items-center border-b-2 border-transparent focus:border-b-2 focus:border-gray-300 focus:text-gray-300">
           <span className="flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out">
             <IoChatbubblesOutline /> Contact
           </span>
@@ -62,12 +62,12 @@ const NavPopOS = () => {
             <IoNewspaperOutline /> Resume
           </span>
         </a>
-        <a href="/"  className={`active:border-b-2 active:border-gray-200 active:text-gray-200 border-b-2 border-transparent hidden lg:flex items-center`}>
+        <NavLink to="/my-anime"  className={`active:border-b-2 active:border-gray-200 active:text-gray-200 border-b-2 border-transparent hidden lg:flex items-center`}>
           <span className="relative flex items-center gap-1 px-2 py-0.5 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-200 rounded-lg transition ease-in-out z-10">
             🍥 My anime
-            <ComingSoon right={"right-[5px]"} top={"top-[30px]"} text="text-xs" />
+            {/* <ComingSoon right={"right-[5px]"} top={"top-[30px]"} text="text-xs" /> */}
           </span>
-        </a>
+        </NavLink>
         <div ref={buttonMobileNavRef}
           onClick={() => setOpenMobileNav(!openMobileNav)}
           className="relative lg:hidden flex items-center cursor-pointer"
