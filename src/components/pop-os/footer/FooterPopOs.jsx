@@ -28,8 +28,7 @@ const FooterPopOs = () => {
         </NavLink> */}
         <a
           href="/"
-          onClick={(e) => {
-            e.preventDefault();
+          onClick={(e) => {   
             bounceOnce(e);
           }}
           className={`focus:is-active-footer-link absolute bottom-[-0.3rem] sm:left-[0.5rem]`}
@@ -79,10 +78,12 @@ const FooterPopOs = () => {
           />
         </a>
         <a
-          href="/resume.pdf"
+          href="/Resume_Carlos_Daniel_Lopez_2023.pdf"
           target="_blank"
           onClick={(e) => {
+            e.preventDefault();
             bounceOnce(e);
+            setTimeout(() => window.open('/Resume_Carlos_Daniel_Lopez_2023.pdf' ,'_blank'), 800)
           }}
         >
           <img
@@ -92,12 +93,12 @@ const FooterPopOs = () => {
           />
         </a>
 
-        <a
-          href="/"
+        <NavLink
           to="/my-anime"
           onClick={(e) => {
             e.preventDefault();
-            bounceOnce(e);
+            bounceOnce(e)
+            setTimeout(() => window.location.href = '/my-anime', 800)
           }}
           className={
             (({ isActive }) => (isActive ? "is-active-footer-link" : "")) +
@@ -108,7 +109,7 @@ const FooterPopOs = () => {
             🍥
             {/* <ComingSoon right={"-right-[50px]"} top={"top-[5px]"} /> */}
           </span>
-        </a>
+        </NavLink>
       </div>
     </div>
   );

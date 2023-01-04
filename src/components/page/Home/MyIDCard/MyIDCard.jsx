@@ -38,7 +38,7 @@ function MyIDCard() {
                       <a href="https://www.linkedin.com/in/carlos-daniel-lopez-perez/" target="_blank" className="hover:text-pink-600">
                         <IoLogoLinkedin />
                       </a>
-                      <a href="/resume.pdf" target="_blank" className="hover:text-pink-600">
+                      <a href="/Resume_Carlos_Daniel_Lopez_2023.pdf" target="_blank" className="hover:text-pink-600">
                         <IoDocumentOutline />
                       </a>
                     </div>
